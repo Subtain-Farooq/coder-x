@@ -1,6 +1,10 @@
 <?php
 
+use App\Http\Controllers\Home;
+use App\Http\Controllers\Projects;
 use Illuminate\Support\Facades\Route;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,8 +17,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'pages.home')->name('home');
+Route::get('/', Home::class)->name('home');
+Route::get('projects', [Projects::class, 'projects'])->name('projects');
+Route::get('projects/{project}', [Projects::class, 'project'])->name('project');
+
 Route::view('about', 'pages.about')->name('about');
-Route::view('portfolio', 'pages.portfolio-list')->name('portfolio');
+
 Route::view('portfolio/single', 'pages.portfolio-single')->name('portfolio.single');
 Route::view('contact', 'pages.contact')->name('contact');

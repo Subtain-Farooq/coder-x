@@ -8,7 +8,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Coder-X</title>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
-        @stack('css')
     </head>
     <body class="relative font-sans antialiased bg-white dark:bg-slate-950">
         <div class="absolute inset-0 top-0 w-full h-screen bg-gradient-to-br from-primary-100 via-white to-white dark:from-primary-950/50 dark:via-secondary-950 dark:to-secondary-950"></div>
@@ -18,15 +17,17 @@
             </div>
         <x-layouts.footer/>
         @stack('js')
+        <script src="{{ asset('assets/fslightbox.js') }}"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script>
-            var swiper = new Swiper(".mySwiper", {
-                slidesPerView: "auto",
+            var projectsSwiper = new Swiper(".projectsSwiper", {
+                slidesPerView: 'auto',
                 spaceBetween: 40,
                 navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
+                    nextEl: ".projectsSwiper-next",
+                    prevEl: ".projectsSwiper-prev",
                 },
+           
 
             });
 

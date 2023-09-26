@@ -30,6 +30,11 @@ return [
 
     'disks' => [
 
+        'projects' => [
+            'driver' => 'local',
+            'root' => resource_path('projects'),
+        ],
+
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app'),

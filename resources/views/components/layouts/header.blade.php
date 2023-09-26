@@ -16,19 +16,19 @@
             </div>
 
             <div class="flex items-center justify-center gap-12">
-                <a href="/"
+                <a href="{{ route('home') }}"
                     class="text-lg font-semibold transition-colors duration-200 ease-in-out text-secondary-950 dark:text-secondary-100 hover:text-secondary-400">
                     Home
                 </a>
-                <a href="/about/"
+                <a href="{{ route('about') }}"
                     class="text-lg font-semibold transition-colors duration-200 ease-in-out text-secondary-950 dark:text-secondary-100 hover:text-secondary-400">
                     About
                 </a>
-                <a href="/portfolio/"
+                <a href="{{ route('projects') }}"
                     class="text-lg font-semibold transition-colors duration-200 ease-in-out text-secondary-950 dark:text-secondary-100 hover:text-secondary-400">
-                    Portfolio
+                    Projects
                 </a>
-                <a href="/contact/"
+                <a href="{{ route('contact') }}"
                     class="text-lg font-semibold transition-colors duration-200 ease-in-out text-secondary-950 dark:text-secondary-100 hover:text-secondary-400">
                     Contact
                 </a>

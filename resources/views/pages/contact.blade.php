@@ -90,84 +90,22 @@
                         Get quick answers to common queries with our Frequently Asked Questions section. Find solutions and insights to streamline your experience.
                     </p>
                 </div>
-
                 <div class="max-w-4xl mx-auto divide-y">
-                    <div class="group" x-data="{ open: false }">
-                        <div class="flex items-start justify-between py-10 cursor-pointer"
-                            @click="open = !open">
-                            <h4 class="text-2xl font-extrabold select-none text-secondary-950 dark:text-white">
-                                What technologies do you specialize in?
-                            </h4>
-                            <div class="bg-secondary-200 dark:bg-secondary-900 group-hover:bg-secondary-800 text-secondary-900 dark:text-secondary-500 group-hover:text-white rounded-xl w-10 h-10 flex items-center justify-center -mt-0.5 transition-colors ease-in-out duration-200">
-                                <x-phosphor-minus class="absolute w-5 h-5 fill-current"/>
-                                <x-phosphor-minus class="absolute w-5 h-5 transition-all duration-200 ease-in-out fill-current" ::class="open ? '' : '-rotate-90'" />
-                            </div>
-                        </div>
-                        <p class="pb-10 text-lg text-secondary-500 dark:text-secondary-400" x-show="open">
-                            I specialize in a range of technologies, including Tailwind CSS, Tailwind UI, Headless UI, Alpine JS, Laravel, Livewire, and MySQL. These tools enable me to create modern, efficient, and interactive web solutions.
-                        </p>
-                    </div>
-                    <div class="group" x-data="{ open: false }">
-                        <div class="flex items-start justify-between py-10 cursor-pointer"
-                            @click="open = !open">
-                            <h4 class="text-2xl font-extrabold select-none text-secondary-950 dark:text-white">
-                                What types of projects do you accept?
-                            </h4>
-                            <div class="bg-secondary-200 dark:bg-secondary-900 group-hover:bg-secondary-800 text-secondary-900 dark:text-secondary-500 group-hover:text-white rounded-xl w-10 h-10 flex items-center justify-center -mt-0.5 transition-colors ease-in-out duration-200">
-                                <x-phosphor-minus class="absolute w-5 h-5 fill-current"/>
-                                <x-phosphor-minus class="absolute w-5 h-5 transition-all duration-200 ease-in-out fill-current" ::class="open ? '' : '-rotate-90'" />
-                            </div>
-                        </div>
-                        <p class="pb-10 text-lg text-secondary-500 dark:text-secondary-400" x-show="open">
-                            I'm open to a wide range of projects, from personal websites to e-commerce platforms and web applications. Whether you need a simple blog or a complex web application, I'm here to help bring your vision to life.
-                        </p>
-                    </div>
-                    <div class="group" x-data="{ open: false }">
-                        <div class="flex items-start justify-between py-10 cursor-pointer"
-                            @click="open = !open">
-                            <h4 class="text-2xl font-extrabold select-none text-secondary-950 dark:text-white">
-                                Do you offer ongoing support and maintenance?
-                            </h4>
-                            <div class="bg-secondary-200 dark:bg-secondary-900 group-hover:bg-secondary-800 text-secondary-900 dark:text-secondary-500 group-hover:text-white rounded-xl w-10 h-10 flex items-center justify-center -mt-0.5 transition-colors ease-in-out duration-200">
-                                <x-phosphor-minus class="absolute w-5 h-5 fill-current"/>
-                                <x-phosphor-minus class="absolute w-5 h-5 transition-all duration-200 ease-in-out fill-current" ::class="open ? '' : '-rotate-90'" />
-                            </div>
-                        </div>
-                        <p class="pb-10 text-lg text-secondary-500 dark:text-secondary-400" x-show="open">
-                            Yes, I provide ongoing support and maintenance services to ensure your website remains up-to-date, secure, and performs optimally. I'm committed to the long-term success of your web project.
-                        </p>
-                    </div>
-                    <div class="group" x-data="{ open: false }">
-                        <div class="flex items-start justify-between py-10 cursor-pointer"
-                            @click="open = !open">
-                            <h4 class="text-2xl font-extrabold select-none text-secondary-950 dark:text-white">
-                                How can I get in touch with you for a project inquiry?
-                            </h4>
-                            <div class="bg-secondary-200 dark:bg-secondary-900 group-hover:bg-secondary-800 text-secondary-900 dark:text-secondary-500 group-hover:text-white rounded-xl w-10 h-10 flex items-center justify-center -mt-0.5 transition-colors ease-in-out duration-200">
-                                <x-phosphor-minus class="absolute w-5 h-5 fill-current"/>
-                                <x-phosphor-minus class="absolute w-5 h-5 transition-all duration-200 ease-in-out fill-current" ::class="open ? '' : '-rotate-90'" />
-                            </div>
-                        </div>
-                        <p class="pb-10 text-lg text-secondary-500 dark:text-secondary-400" x-show="open">
-                            You can easily reach out to me through the contact form on this website. Alternatively, you can email me at [Your Email Address] or call me at [Your Phone Number]. I'll be happy to discuss your project and answer any questions you have.
-                        </p>
-                    </div>
-
-                    <div class="group" x-data="{ open: false }">
-                        <div class="flex items-start justify-between py-10 cursor-pointer"
-                            @click="open = !open">
-                            <h4 class="text-2xl font-extrabold select-none text-secondary-950 dark:text-white">
-                                Do you work with clients remotely?
-                            </h4>
-                            <div class="bg-secondary-200 dark:bg-secondary-900 group-hover:bg-secondary-800 text-secondary-900 dark:text-secondary-500 group-hover:text-white rounded-xl w-10 h-10 flex items-center justify-center -mt-0.5 transition-colors ease-in-out duration-200">
-                                <x-phosphor-minus class="absolute w-5 h-5 fill-current"/>
-                                <x-phosphor-minus class="absolute w-5 h-5 transition-all duration-200 ease-in-out fill-current" ::class="open ? '' : '-rotate-90'" />
-                            </div>
-                        </div>
-                        <p class="pb-10 text-lg text-secondary-500 dark:text-secondary-400" x-show="open">
-                            Yes, I'm experienced in working with clients from all around the world. Thanks to digital communication tools, I can collaborate effectively with clients regardless of their location.
-                        </p>
-                    </div>
+                    <x-tag.faq question=" What types of projects do you accept?">
+                        I specialize in a range of technologies, including Tailwind CSS, Tailwind UI, Headless UI, Alpine JS, Laravel, Livewire, and MySQL. These tools enable me to create modern, efficient, and interactive web solutions.
+                    </x-tag.faq>
+                    <x-tag.faq question=" What types of projects do you accept?">
+                        I'm open to a wide range of projects, from personal websites to e-commerce platforms and web applications. Whether you need a simple blog or a complex web application, I'm here to help bring your vision to life.
+                    </x-tag.faq>
+                    <x-tag.faq question="Do you offer ongoing support and maintenance?">
+                        Yes, I provide ongoing support and maintenance services to ensure your website remains up-to-date, secure, and performs optimally. I'm committed to the long-term success of your web project.                    
+                    </x-tag.faq>
+                    <x-tag.faq question="How can I get in touch with you for a project inquiry?">
+                        You can easily reach out to me through the contact form on this website. Alternatively, you can email me at <a href="mailto:subtain@coder-x.com">subtain@coder-x.com</a> / <a href="mailto:subtainfrq@gmail.com">subtainfrq@gmail.com </a> or call me at <a href="tel:+92 300 7998 354">+92 300 7998 354</a> I'll be happy to discuss your project and answer any questions you have.
+                    </x-tag.faq>
+                    <x-tag.faq question="Do you work with clients remotely?">
+                        Yes, I'm experienced in working with clients from all around the world. Thanks to digital communication tools, I can collaborate effectively with clients regardless of their location.
+                    </x-tag.faq>
                 </div>
             </div>
         </div>

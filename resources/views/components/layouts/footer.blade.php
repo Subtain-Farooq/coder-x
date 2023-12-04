@@ -3,8 +3,8 @@
 
     {{-- <footer class="mt-20 border-t border-secondary-200 dark:border-secondary-900 dark:bg-black/30 snap-end snap-always"> --}}
 
-    <div class="w-full py-24 mx-auto max-w-7xl ">
-        <div class="flex items-start gap-24">
+    <div class="w-full sm:py-24 py-16 mx-auto max-w-7xl box">
+        <div class="flex lg:flex-row flex-col items-start lg:gap-24 sm:gap-20 gap-12">
             <div class="flex flex-col max-w-sm shrink-0 gap-7">
                 <a href="/" class="inline-flex items-center gap-2 ">
                     <svg class="fill-current w-14 h-14 dark:text-secondary-100 text-secondary-950" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="fill-current"
@@ -16,8 +16,7 @@
                     <span class="text-3xl dark:text-secondary-100 text-secondary-950">Coder-X</span>
                 </a>
                 <p class="max-w-lg mx-auto text-lg font-medium leading-8 text-secondary-500 dark:text-secondary-400 dark:font-normal">
-                   {{-- A full-time freelance web developer with experience in Laravel, Tailwind CSS/UI, Headless UI, Alpine JS, and PSD to HTML conversions using Figma,
-                   ChatGPT --}}
+                   {{-- A full-time freelance web developer with experience in Laravel, Tailwind CSS/UI, Headless UI, Alpine JS, and PSD to HTML conversions using Figma --}}
                    Experienced Freelance Web Developer specializing in Laravel, Tailwind CSS, Tailwind UI, Alpine JS, and Livewire. Let's bring your web projects to life.
                 </p>
                 <div class="flex items-center gap-5 mt-2">
@@ -39,7 +38,7 @@
                 </div>
             </div>
             <div class="w-full">
-                <div class="grid grid-cols-4 gap-24">
+                <div class="grid xl:grid-cols-4 lg:grid-cols-2 sm:grid-cols-4 grid-cols-1 xl:gap-24 sm:gap-10 gap-12">
 
                     <div class="flex flex-col w-full gap-7">
                         <h5 class="text-xl font-semibold text-secondary-950 dark:text-white">Pages</h5>
@@ -73,7 +72,7 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-col w-full col-span-2 gap-7 ">
+                    <div class="flex flex-col w-full sm:col-span-2 gap-7 ">
                         <h5 class="text-xl font-semibold text-secondary-950 dark:text-white">Contact Me</h5>
                         <div class="flex flex-col w-full gap-5 ">
                             <a href="" class="flex items-center gap-2 text-lg font-semibold transition-colors duration-300 ease-in-out text-secondary-500 hover:text-secondary-950 dark:hover:text-secondary-400">
@@ -92,7 +91,7 @@
             </div>
         </div>
     </div>
-    <div class="py-6 border-t border-secondary-200 dark:border-secondary-900 dark:bg-black/20">
+    <div class="py-6 border-t border-secondary-200 dark:border-secondary-900 dark:bg-black/20 sm:text-base text-sm">
         <p class="flex items-center justify-center gap-2 text-center text-secondary-700 dark:text-secondary-600 font-seemibold">
             Copyright © Coder X | Designed and Developed by <x-phosphor-heart-fill class="w-5 h-5 -mb-1 animate-pulse text-rose-700" />
         </p>

@@ -9,10 +9,10 @@
         <title>Coder-X</title>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="relative font-sans antialiased bg-white dark:bg-slate-950">
+    <body class="relative font-sans antialiased bg-white dark:bg-slate-950 overflow-x-hidden">
         <div class="absolute inset-0 top-0 w-full h-screen bg-gradient-to-br from-primary-100 via-white to-white dark:from-primary-950/50 dark:via-secondary-950 dark:to-secondary-950"></div>
         <x-layouts.header />
-            <div class="relative flex flex-col gap-64 pt-56 pb-32">
+            <div class="relative flex flex-col xl:gap-64 lg:gap-52 sm:gap-40 gap-28 lg:pt-56 sm:pt-36 pt-28 xl:pb-32">
                 {{ $slot }}
             </div>
         <x-layouts.footer/>
@@ -22,13 +22,11 @@
         <script>
             var projectsSwiper = new Swiper(".projectsSwiper", {
                 slidesPerView: 'auto',
-                spaceBetween: 40,
+                spaceBetween: 30,
                 navigation: {
                     nextEl: ".projectsSwiper-next",
                     prevEl: ".projectsSwiper-prev",
                 },
-           
-
             });
 
             var swiper = new Swiper(".mySwiperReviewe", {

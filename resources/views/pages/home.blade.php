@@ -13,9 +13,11 @@
                         Crafting Seamless <br /> Web Experiences with Frontend Excellence
                     </span>
                 </h1>
-                <a href="" class="btn-primary">
-                    Get in Touch
-                </a>
+                <div>
+                    <a href="" class="btn-primary">
+                        Get in Touch
+                    </a>
+                </div>
             </div>
             <img class="z-10 xl:w-full xl:max-w-xs w-72 shrink-0 lg:block hidden" alt=""
                 src="{{ asset('assets/illustration/img-3.png') }}" />
@@ -125,7 +127,7 @@
                     </div>
                 </div>
             </div>
-            <a href="" class="btn-primary sm:w-auto w-full">
+            <a href="" class="btn-primary">
                 Get in Touch
             </a>
         </div>
@@ -208,14 +210,18 @@
                         </h2>
                         <p class="text-lg font-medium leading-8 text-secondary-500 dark:text-secondary-400">
                             {{-- I'm a full-time freelance web developer with experience in Laravel, Tailwind CSS/UI, Headless UI, Alpine JS, and Figma, PSD, XD, Sketch to HTML conversions using Tailwind CSS and Alpine JS. I'm excited to work with you and help bring your web development projects to life. Let's connect and discuss how I can support your business needs. --}}
-                            Hi, I'm Subtain Farooq, a passionate and skilled website developer with expertise in a range
+                            {{-- Hi, I'm Subtain Farooq, a passionate and skilled website developer with expertise in a range
                             of cutting-edge technologies. With a strong foundation in web development, I specialize in
-                            creating dynamic, responsive, and user-friendly websites.
+                            creating dynamic, responsive, and user-friendly websites. --}}
+
+                            Hi, I am Subtain Farooq, a dedicated frontend developer with a mission to craft seamless and visually appealing user interfaces. With a strong foundation in HTML, I build the structure of web pages, while Tailwind CSS adds the stylish touch, and Alpine JS injects interactivity into every project.
                         </p>
                     </div>
-                    <a href="" class="btn-primary">
-                        Read More
-                    </a>
+                    <div>
+                        <a href="" class="btn-primary">
+                            Get in Touch
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -234,7 +240,7 @@
                     projects
                 </p>
             </div>
-            <div class="md:grid lg:grid-cols-3 lg:gap-0 gap-14 grid-cols-1 mx-auto w-full flex flex-col items-center">
+            <div class="md:grid lg:grid-cols-2 lg:gap-0 gap-14 grid-cols-1 mx-auto w-full flex flex-col items-center">
                 <div class="flex flex-col items-center gap-8 md:py-5 w-full shrink-0 ">
                     <div
                         class="rounded-[28px] dark:bg-sky-500 bg-sky-100 dark:text-sky-100 text-sky-400 w-20 h-20 flex items-center justify-center">
@@ -263,57 +269,29 @@
                 </div>
 
                 <div
-                    class="flex flex-col items-center gap-8 lg:border-x dark:border-secondary-800 border-secondary-200 py-5 w-full">
+                    class="flex flex-col items-center gap-8 lg:border-l dark:border-secondary-800 border-secondary-200 py-5 w-full">
                     <div
                         class="rounded-[28px] dark:bg-violet-500 bg-violet-100 dark:text-violet-100 text-violet-500 w-20 h-20 flex items-center justify-center">
                         <x-phosphor-codesandbox-logo-fill class="w-10 h-10 fill-current" />
                     </div>
                     <h2 class="text-2xl font-bold text-secondary-950 dark:text-white text-center">
-                        Backend Development
+                         Tools & Technologies
                     </h2>
-                    <ul class="space-y-4 text-lg font-semibold text-center text-secondary-500 dark:text-secondary-400">
-                        <li>
-                            Laravel
-                        </li>
-                        <li>
-                            Livewire
-                        </li>
-                        <li>
-                            Tailwind CSS
-                        </li>
-                        <li>
-                            Alpine JS
-                        </li>
-                        <li>
-                            MySQL
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="flex flex-col items-center gap-8 py-5 w-full">
-                    <div
-                        class="rounded-[28px] dark:bg-rose-500 dark:text-rose-100 bg-rose-100 text-rose-500 w-20 h-20 flex items-center justify-center">
-                        <x-phosphor-suitcase-simple-fill class="w-10 h-10 fill-current" />
-                    </div>
-                    <h2 class="text-2xl font-bold text-secondary-950 dark:text-white text-center">
-                        Tools & Technologies
-                    </h2>
-
                     <ul class="space-y-4 text-lg font-semibold text-center text-secondary-500 dark:text-secondary-400">
                         <li>
                             VS Code
                         </li>
                         <li>
-                            PHP Storm
+                            Figma
                         </li>
                         <li>
-                            Figma
+                            Adobe XD
                         </li>
                         <li>
                             Adobe Photoshop
                         </li>
                         <li>
-                            Adobe XD
+                            Lando
                         </li>
                     </ul>
                 </div>
@@ -347,7 +325,7 @@
                         @foreach ($projects as $project)
                             <div class="relative w-1/2 swiper-slide group shrink-0">
                                 <div class="flex flex-col gap-10">
-                                    <div class="h-[350px] relative overflow-hidden rounded-3xl">
+                                    <div class="sm:h-[350px] h-64 relative overflow-hidden rounded-3xl">
                                         <img class="relative object-cover object-top w-full h-[350px] border-4 border-primary-200/40 dark:border-primary-300/20 rounded-3xl"
                                             src="{{ asset($project->featured_image) }}" />
                                         <div
@@ -377,14 +355,14 @@
                         @endforeach
                     </div>
 
-                    <div class="lg:hidden flex flex-row-reverse items-center justify-center gap-5 mx-auto w-full">
+                    <div class="lg:hidden flex flex-row-reverse items-center justify-center lg:gap-5 gap-8 mx-auto w-full">
                         <button type="button"
-                            class="flex items-center justify-center w-20 h-20 transition-colors duration-300 ease-in-out rounded-full cursor-pointer projectsSwiper-next bg-secondary-100 dark:bg-secondary-900 text-secondary-600 hover:text-white dark:hover:text-secondary-100 hover:bg-secondary-950 dark:hover:bg-primary-500">
+                            class="flex items-center justify-center lg:w-20 lg:h-20 w-16 h-16 transition-colors duration-300 ease-in-out rounded-full cursor-pointer projectsSwiper-next bg-secondary-100 dark:bg-secondary-900 text-secondary-600 hover:text-white dark:hover:text-secondary-100 hover:bg-secondary-950 dark:hover:bg-primary-500">
                             <x-phosphor-caret-right
                                 class="w-8 h-8 -mr-0.5 transition-colors duration-300 ease-in-out" />
                         </button>
                         <button type="button"
-                            class="flex items-center justify-center w-20 h-20 transition-colors duration-300 ease-in-out rounded-full cursor-pointer projectsSwiper-prev bg-secondary-100 dark:bg-secondary-900 text-secondary-600 hover:text-white dark:hover:text-secondary-100 hover:bg-secondary-950 dark:hover:bg-primary-500">
+                            class="flex items-center justify-center lg:w-20 lg:h-20 w-16 h-16 transition-colors duration-300 ease-in-out rounded-full cursor-pointer projectsSwiper-prev bg-secondary-100 dark:bg-secondary-900 text-secondary-600 hover:text-white dark:hover:text-secondary-100 hover:bg-secondary-950 dark:hover:bg-primary-500">
                             <x-phosphor-caret-left
                                 class="w-8 h-8 -ml-0.5 transition-colors duration-300 ease-in-out" />
                         </button>

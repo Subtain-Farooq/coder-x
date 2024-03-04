@@ -50,7 +50,7 @@
     }
 
     .btn-primary{
-        @apply transition-all ease-in-out duration-500 hover:bg-white hover:text-primary-600 border-2 border-primary-500 sm:rounded-3xl rounded-2xl text-center font-bold text-xl text-white bg-primary-500 sm:w-56 w-48 sm:h-[72px] px-5 py-4 inline-flex items-center justify-center hover:scale-95
+        @apply sm:w-auto w-full transition-all ease-in-out duration-500 hover:bg-white hover:text-primary-600 border-2 border-primary-500 sm:rounded-3xl rounded-2xl text-center font-bold text-xl text-white bg-primary-500 sm:h-[72px] px-12 py-4 inline-flex items-center justify-center hover:scale-95
     }
     .label{
         @apply block text-base font-semibold leading-6 text-secondary-500 dark:text-secondary-400

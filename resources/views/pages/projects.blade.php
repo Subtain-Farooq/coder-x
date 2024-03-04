@@ -1,20 +1,17 @@
 <x-app-layout>
-    <section class="w-full max-w-6xl mx-auto">
-        <div class="flex flex-col w-full gap-24">
+    <section class="w-full max-w-6xl mx-auto box">
+        <div class="flex flex-col w-full lg:gap-24 gap-10">
             <div class="flex flex-col items-center gap-8">
-                <h2 class="text-6xl font-bold text-center text-secondary-950 dark:text-white">
+                <h2 class="sm:text-5xl text-4xl font-bold text-center text-secondary-950 dark:text-white">
                     My Work
                 </h2>
-                {{-- <p class="max-w-xl mx-auto text-lg font-medium leading-7 text-center text-secondary-500 dark:text-secondary-300">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus mattis nunc aliquam tincidunt est non. Viverra nec eu.
-                </p> --}}
             </div>
-            <div class="grid grid-cols-2 gap-16">
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-16 lg:max-w-full max-w-lg mx-auto">
                 @foreach ($projects as $project)
                 <div class="flex flex-col gap-10 group relative z-10">
-                    <div class="h-[370px] rounded-3xl overflow-hidden px-10 pt-10 relative z-0">
+                    <div class="xl:h-[370px] lg:h-80 sm:h-96 h-64 rounded-3xl overflow-hidden sm:px-10 sm:pt-10 sm:pb-0 pt-1.5 pb-1.5 px-1.5 relative z-0">
                       <div class="absolute inset-0 bg-gradient-to-tr from-rose-200 via-sky-200 to-purple-100 dark:from-indigo-900 dark:via-sky-900 dark:to-primary-900 w-full h-full rounded-[28px]"></div>
-                          <img class="relative z-20 object-cover object-top w-full h-full transition-all duration-500 ease-in-out rounded-b-none shadow-lg rounded-2xl group-hover:scale-105" src="{{ asset($project->featured_image) }}" />
+                          <img class="relative z-20 object-cover object-top w-full h-full transition-all duration-500 ease-in-out sm:rounded-b-none shadow-lg sm:rounded-2xl rounded-3xl group-hover:scale-105" src="{{ asset($project->featured_image) }}" />
                     </div>
                     <div class="flex flex-col gap-4">
                         <h3 class="text-2xl font-bold dark:text-primary-500 text-primary-500">

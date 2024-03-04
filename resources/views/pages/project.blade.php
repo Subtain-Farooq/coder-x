@@ -1,9 +1,9 @@
 <x-app-layout>
-    <section class="w-full max-w-6xl mx-auto">
+    <section class="w-full max-w-6xl mx-auto box">
         <div class="flex flex-col w-full gap-24">
 
             <div class="flex flex-col gap-16">
-                <h2 class="text-6xl font-bold leading-tight text-secondary-950 dark:text-white">
+                <h2 class="lg:text-6xl sm:text-5xl text-4xl  font-bold leading-tight text-secondary-950 dark:text-white">
                     {{ $project->title }}
                 </h2>
                 <div class="w-full space-y-5">
@@ -11,7 +11,7 @@
                         <p class="text-2xl font-extrabold text-secondary-950 dark:text-white">Frontend Stack</p>
                         <p class="text-xl font-semibold text-secondary-500 dark:text-secondary-400">
                             @foreach ($project->stack as $stack)
-                                {{ $stack }}
+                            {{ $stack }}
                             @endforeach
                         </p>
                     </div>
@@ -22,16 +22,19 @@
                 </div>
             </div>
 
-            <div class="overflow-hidden aspect-w-7 aspect-h-4 rounded-3xl bg-sky-100">
-                <img class="object-cover object-top w-full h-full transition-all duration-500 ease-in-out" alt="{{ $project->featured_image_alt }}" src="{{ asset($project->featured_image) }}" />
-            </div>
+            <div class="flex flex-col sm:gap-24 gap-8">
 
-            <div class="gap-x-8 columns-3">
-                @foreach ($project->images as $image)
-                    <a data-fslightbox  href="{{ asset($image) }}" class="block mt-8 first:mt-0">
+                <div class="overflow-hidden aspect-w-7 sm:aspect-h-4 aspect-h-5 sm:rounded-3xl rounded-xl bg-sky-100">
+                    <img class="object-cover object-top w-full h-full transition-all duration-500 ease-in-out" alt="{{ $project->featured_image_alt }}" src="{{ asset($project->featured_image) }}" />
+                </div>
+
+                <div class="gap-x-8 lg:columns-3 sm:columns-2 columns-1">
+                    @foreach ($project->images as $image)
+                    <a data-fslightbox href="{{ asset($image) }}" class="block mt-8 first:mt-0">
                         <img class="transition-all duration-300 ease-in-out border-4 shadow-lg rounded-xl border-primary-950/5" src="{{ asset($image) }}" />
                     </a>
-                @endforeach
+                    @endforeach
+                </div>
             </div>
 
         </div>

@@ -9,10 +9,10 @@
         <title>Coder-X</title>
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="relative font-sans antialiased bg-white dark:bg-slate-950 overflow-x-hidden">
+    <body class="relative font-sans antialiased bg-white dark:bg-slate-950 overflow-x-hidden" x-data="{ menu:false }" :class="menu && 'overflow-hidden'">
         <div class="absolute inset-0 top-0 w-full h-screen bg-gradient-to-br from-primary-100 via-white to-white dark:from-primary-950/50 dark:via-secondary-950 dark:to-secondary-950"></div>
         <x-layouts.header />
-            <div class="relative flex flex-col xl:gap-64 lg:gap-52 sm:gap-40 gap-28 lg:pt-56 sm:pt-36 pt-28 xl:pb-32">
+            <div class="relative flex flex-col xl:gap-64 lg:gap-52 sm:gap-40 gap-28 lg:pt-56 sm:pt-40 pt-36 xl:pb-32">
                 {{ $slot }}
             </div>
         <x-layouts.footer/>
@@ -21,8 +21,23 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script>
             var projectsSwiper = new Swiper(".projectsSwiper", {
-                slidesPerView: 'auto',
+                slidesPerView: 1,
                 spaceBetween: 30,
+                breakpoints: {
+                    
+                    640: {
+                    slidesPerView: 1.1,
+                    spaceBetween: 20,
+                    },
+                    768: {
+                    slidesPerView: 1.3,
+                    spaceBetween: 30,
+                    },
+                    1024: {
+                    slidesPerView: 'auto',
+                    spaceBetween: 30,
+                    },
+                },
                 navigation: {
                     nextEl: ".projectsSwiper-next",
                     prevEl: ".projectsSwiper-prev",

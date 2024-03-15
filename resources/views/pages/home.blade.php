@@ -4,12 +4,11 @@
             <div class="flex flex-col w-full gap-10 mt-12">
                 <h1 class="relative flex flex-col gap-6">
                     <x-icons.subtitle-lines class="md:inline-block hidden" />
-                    <span
-                        class="block sm:text-2xl text-lg font-bold leading-tight text-secondary-700 dark:text-secondary-400">
+                    <span class="block sm:text-2xl text-lg font-bold leading-tight text-secondary-700 dark:text-secondary-400">
                         "Hey, I’m Subtain Farooq
                     </span>
                     <span
-                        class="xl:text-[55px] xl:leading-tight sm:text-5xl sm:leading-tight text-4xl font-bold leading-snug tracking-wide text-secondary-900 dark:text-secondary-50">
+                        class="xl:text-[56px] xl:leading-tight sm:text-5xl sm:leading-tight text-4xl font-bold leading-snug tracking-wide text-secondary-900 dark:text-secondary-50">
                         Crafting Seamless <br /> Web Experiences with Frontend Excellence
                     </span>
                 </h1>
@@ -19,7 +18,7 @@
                     </a>
                 </div>
             </div>
-            <img class="z-10 xl:w-full xl:max-w-xs w-72 shrink-0 lg:block hidden" alt=""
+            <img class="z-10 xl:w-full xl:max-w-xs w-72 shrink-0 lg:block hidden" alt="hero image"
                 src="{{ asset('assets/illustration/img-3.png') }}" />
         </div>
     </section>
@@ -143,54 +142,44 @@
                     class="text-center text-lg leading-7 text-secondary-500 dark:text-secondary-400 font-medium max-w-[510px] mx-auto">
                     Delivering exceptional client experiences and achieving their business objectives is of utmost
                     importance to me.
+                    <br/>
+                    <br/>
                 </p>
             </div>
             <div class="relative xl:max-w-4xl md:max-w-2xl w-full mx-auto swiper mySwiperReviewe">
                 <div class="flex w-full overflow-hidden swiper-wrapper">
-                    <div class="relative w-full swiper-slide shrink-0">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-tr from-rose-200 via-sky-200 to-purple-100 dark:from-indigo-900 dark:via-sky-900 dark:to-primary-900 w-full h-full rounded-[28px]">
-                        </div>
-                        <div class="p-1">
+                
+                    @foreach ($reviews as $review)
+                        <div class="relative w-full swiper-slide shrink-0">
                             <div
-                                class="flex flex-col items-center justify-center w-full gap-8 md:px-20 sm:px-12 px-6 h-96 bg-white/90 dark:bg-black/75 backdrop-blur-2xl rounded-3xl">
-                                <blockquote
-                                    class="sm:text-2xl text-xl leading-normal text-center text-secondary-500 dark:text-secondary-400">
-                                    I absolutely love working with Subtainfarooq. From start to finish the communication
-                                    and work product is exactly what we are looking for. I will use him moving forward
-                                    for all of our front end design needs with no hesitation at all.
-                                </blockquote>
-                                <p class="text-2xl font-bold text-center text-secondary-950 dark:text-white">Billy</p>
+                                class="absolute inset-0 bg-gradient-to-tr from-rose-200 via-sky-200 to-purple-100 dark:from-indigo-900 dark:via-sky-900 dark:to-primary-900 w-full h-full rounded-[28px]">
+                            </div>
+                            <div class="p-1">
+                                <div
+                                    class="flex flex-col items-center justify-center w-full gap-8 md:px-20 sm:px-12 px-6 h-96 bg-white/90 dark:bg-black/75 backdrop-blur-2xl rounded-3xl">
+                                    <blockquote class="sm:text-2xl text-xl leading-normal text-center text-secondary-500 dark:text-secondary-400">
+                                        {{ $review->message }}
+                                    </blockquote>
+                                    <div class="flex items-center gap-4">
+                                        <p class="text-2xl font-bold text-center text-secondary-950 dark:text-white capitalize">{{ $review->name }}</p>
+                                        <div class="h-7 w-px dark:bg-secondary-800 bg-secondary-200"></div>
+                                        <img class="h-5 shrink-0" src="{{ asset($review->flag) }}" alt="{{ $review->country_name }}" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="relative w-full swiper-slide shrink-0">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-tr from-rose-200 via-sky-200 to-purple-100 dark:from-indigo-900 dark:via-sky-900 dark:to-primary-900 w-full h-full rounded-[28px]">
-                        </div>
-                        <div class="p-1">
-                            <div
-                                class="flex flex-col items-center justify-center w-full gap-8 px-20 h-96 bg-white/90 dark:bg-black/75 backdrop-blur-2xl rounded-3xl">
-                                <blockquote
-                                    class="text-2xl leading-normal text-center text-secondary-500 dark:text-secondary-400">
-                                    I absolutely love working with Subtainfarooq. From start to finish the communication
-                                    and work product is exactly what we are looking for. I will use him moving forward
-                                    for all of our front end design needs with no hesitation at all.
-                                </blockquote>
-                                <p class="text-2xl font-bold text-center text-secondary-950 dark:text-white">Tomas</p>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
+                    
                 </div>
                 <div
                     class="lg:absolute z-20 flex flex-row-reverse items-center lg:justify-between justify-center w-full gap-5 lg:mt-4 sm:mt-12 mt-9 lg:top-1/3">
-                    <button type="button"
+                    <button type="button" aria-label="Swiper slider next"
                         class="flex items-center justify-center sm:w-20 sm:h-20 w-16 h-16 lg:-mr-32 transition-colors duration-300 ease-in-out rounded-full cursor-pointer swiper-review-next bg-secondary-100 dark:bg-secondary-900 text-secondary-600 hover:text-white dark:hover:text-secondary-100 hover:bg-secondary-950 dark:hover:bg-primary-500">
-                        <x-phosphor-caret-right class="w-8 h-8 -mr-0.5 transition-colors duration-300 ease-in-out" />
-                    </button>
-                    <button type="button"
+                        <x-phosphor-caret-right class="w-8 h-8 -mr-0.5 " />
+                    </button> 
+                    <button type="button" aria-label="Swiper slider previous"
                         class="flex items-center justify-center sm:w-20 sm:h-20 w-16 h-16 lg:-ml-32 transition-colors duration-300 ease-in-out rounded-full cursor-pointer swiper-review-prev bg-secondary-100 dark:bg-secondary-900 text-secondary-600 hover:text-white dark:hover:text-secondary-100 hover:bg-secondary-950 dark:hover:bg-primary-500">
-                        <x-phosphor-caret-left class="w-8 h-8 -ml-0.5 transition-colors duration-300 ease-in-out" />
+                        <x-phosphor-caret-left class="w-8 h-8 -ml-0.5" />
                     </button>
                 </div>
             </div>
@@ -200,7 +189,7 @@
     <section class="max-w-6xl mx-auto snap-always snap-start box">
         <div class="flex lg:flex-row-reverse flex-col items-center justify-between w-full lg:gap-0 gap-6">
             <div class="w-full xl:max-w-xl max-w-md lg:-mr-16 shrink-0">
-                <img class="w-full" alt="" src="{{ asset('assets/illustration/about-me-2.png') }}" />
+                <img class="w-full" alt="illustration" src="{{ asset('assets/illustration/about-me-2.png') }}" />
             </div>
             <div class="w-full">
                 <div class="flex flex-col gap-10">
@@ -214,7 +203,7 @@
                             of cutting-edge technologies. With a strong foundation in web development, I specialize in
                             creating dynamic, responsive, and user-friendly websites. --}}
 
-                            Hi, I am Subtain Farooq, a dedicated frontend developer with a mission to craft seamless and visually appealing user interfaces. With a strong foundation in HTML, I build the structure of web pages, while Tailwind CSS adds the stylish touch, and Alpine JS injects interactivity into every project.
+                            I'm Subtain Farooq, a dedicated frontend developer specializing in crafting seamless and visually appealing user interfaces. With a solid foundation in HTML, Tailwind CSS, Laravel Blade, and Alpine JS, I bring expertise and precision to every project I undertake.
                         </p>
                     </div>
                     <div>
@@ -263,6 +252,9 @@
                             Alpine JS
                         </li>
                         <li>
+                            Swiper JS
+                        </li>
+                        <li>
                             Laravel Blade
                         </li>
                     </ul>
@@ -293,6 +285,9 @@
                         <li>
                             Lando
                         </li>
+                        <li>
+                            Laravel Heard
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -308,15 +303,15 @@
                             Take a look at my portfolio
                         </h2>
                         <div class="lg:flex hidden flex-row-reverse gap-5">
-                            <button type="button"
+                            <button type="button" aria-label="Swiper slider next"
                                 class="flex items-center justify-center w-20 h-20 transition-colors duration-300 ease-in-out rounded-full cursor-pointer projectsSwiper-next bg-secondary-100 dark:bg-secondary-900 text-secondary-600 hover:text-white dark:hover:text-secondary-100 hover:bg-secondary-950 dark:hover:bg-primary-500">
                                 <x-phosphor-caret-right
-                                    class="w-8 h-8 -mr-0.5 transition-colors duration-300 ease-in-out" />
+                                    class="w-8 h-8 -mr-0.5" />
                             </button>
-                            <button type="button"
+                            <button type="button" aria-label="Swiper slider previous"
                                 class="flex items-center justify-center w-20 h-20 transition-colors duration-300 ease-in-out rounded-full cursor-pointer projectsSwiper-prev bg-secondary-100 dark:bg-secondary-900 text-secondary-600 hover:text-white dark:hover:text-secondary-100 hover:bg-secondary-950 dark:hover:bg-primary-500">
                                 <x-phosphor-caret-left
-                                    class="w-8 h-8 -ml-0.5 transition-colors duration-300 ease-in-out" />
+                                    class="w-8 h-8 -ml-0.5" />
                             </button>
                         </div>
                     </div>
@@ -326,11 +321,8 @@
                             <div class="relative w-1/2 swiper-slide group shrink-0">
                                 <div class="flex flex-col gap-10">
                                     <div class="sm:h-[350px] h-64 relative overflow-hidden rounded-3xl">
-                                        <img class="relative object-cover object-top w-full h-[350px] border-4 border-primary-200/40 dark:border-primary-300/20 rounded-3xl"
-                                            src="{{ asset($project->featured_image) }}" />
-                                        <div
-                                            class="absolute inset-0 duration-300 ease-in-out rounded-3xl group-hover:bg-transparent">
-                                        </div>
+                                        <img class="relative object-cover object-top w-full h-[350px] border-4 border-primary-200/40 dark:border-primary-300/20 rounded-3xl "
+                                            src="{{ asset($project->featured_image) }}" alt=" {{ $project->featured_image_alt }}" />
                                     </div>
                                     <div class="flex flex-col gap-4">
                                         <h3
@@ -342,15 +334,14 @@
                                             {{ $project->short_description }}
                                         </p>
                                         <p
-                                            class="text-secondary-950 dark:text-white text-lg inline-flex items-center gap-1.5 font-bold dark:font-semibold group-hover:text-primary-300 transition-all ease-in-out duration-300">
+                                            class="text-secondary-950 dark:text-white text-lg inline-flex items-center gap-1.5 font-bold dark:font-semibold transition-colors ease-in-out duration-300">
                                             View More Details
-                                            <x-phosphor-arrow-right
-                                                class="w-5 h-5 fill-current group-hover:translate-x-1.5 mt-0.5 transition-all ease-in-out duration-300" />
+                                            <x-phosphor-arrow-right class="w-5 h-5 fill-current group-hover:translate-x-1.5 mt-0.5 transition-all ease-in-out duration-300" />
                                         </p>
                                     </div>
                                 </div>
                                 <a href="{{ route('project', ['project' => $project->slug]) }}"
-                                    class="absolute inset-0 "></a>
+                                    class="absolute inset-0 " aria-label="{{ $project->title }}"></a>
                             </div>
                         @endforeach
                     </div>

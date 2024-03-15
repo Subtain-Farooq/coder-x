@@ -4,6 +4,8 @@
 
 @layer base{
 
+    [x-cloak] { display: none !important; }
+
     @font-face {
         font-family: 'Satoshi';
         src: url('fonts/Satoshi-Variable.woff2') format('woff2'),

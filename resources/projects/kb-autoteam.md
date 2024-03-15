@@ -4,18 +4,16 @@ short_description: "KB Autoteam Kft. Fiat, Fiat Professional, Jeep and Piaggio D
 
 description: "KB Autoteam Kft. Fiat, Fiat Professional, Jeep and Piaggio Dealership and Service, Keceli út 19-23 in Kiskunhalas. "
 
-featured_image: "assets/featured-images/kbautoteam.jpg"
+featured_image: "assets/featured-images/kbautoteam.webp"
 featured_image_alt: "KB AutoTeam Screenshot"
-stack: ["Tailwind CSS,", "Alpine JS,", "HTML"]
+stack: ["Tailwind CSS,", "Alpine JS,", "and Laravel Blade"]
 website_link: "https://www.kbautoteam.hu/"
 images: [
-    "assets/images/askotto/img-0.jpg",
-    "assets/images/askotto/img-1.jpg",
-    "assets/images/askotto/img-2.jpg",
-    "assets/images/askotto/img-3.jpg",
-    "assets/images/askotto/img-4.jpg",
-    "assets/images/askotto/img-5.jpg",    
-    "assets/images/askotto/img-6.jpg",    
-    "assets/images/askotto/img-7.jpg",    
+    "assets/images/kb-autoteam/img-0.webp",
+    "assets/images/kb-autoteam/img-1.webp",
+    "assets/images/kb-autoteam/img-2.webp",
+    "assets/images/kb-autoteam/img-3.webp",
+    "assets/images/kb-autoteam/img-4.webp",
+    "assets/images/kb-autoteam/img-5.webp",    
 ]
 ---

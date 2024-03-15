@@ -4,7 +4,8 @@ return [
     'default_collection' => null,
 
     'collections' => [
-        'projects'
+        'projects',
+        'reviews'
         /* An example collection. All keys are optional.
 
         'posts' => [

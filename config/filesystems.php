@@ -34,6 +34,10 @@ return [
             'driver' => 'local',
             'root' => resource_path('projects'),
         ],
+        'reviews' => [
+            'driver' => 'local',
+            'root' => resource_path('reviews'),
+        ],
 
         'local' => [
             'driver' => 'local',

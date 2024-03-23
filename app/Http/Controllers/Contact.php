@@ -9,7 +9,7 @@ class Contact extends Controller
 {
      public function __invoke()
     {
-        SEOTools::setTitle('Tailwind CSS Expert | Frontend Developer');
+        SEOTools::setTitle('Tailwind CSS Developer | Frontend Developer');
         SEOTools::setDescription('Discover expert Tailwind CSS skills from a dedicated frontend developer. Elevate your website with Alpine.js.  let\'s create a standout online presence!');
         SEOTools::opengraph()->setUrl('http://coder-x.com');
         SEOTools::setCanonical('http://coder-x.com');

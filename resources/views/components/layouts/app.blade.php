@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="dark"
-        x-data="{ darkMode: localStorage.getItem('dark') === 'true'}"
-        x-init="$watch('darkMode', val => localStorage.setItem('dark', val))"
-        x-bind:class="{ 'dark': darkMode }">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="dark">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,7 +16,7 @@
         {!! SEO::generate() !!}
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="relative font-sans antialiased bg-white dark:bg-slate-950 overflow-x-hidden" x-data="{ menu:false }" :class="menu && 'overflow-hidden'">
+    <body class="relative overflow-x-hidden font-sans antialiased bg-white dark:bg-slate-950" x-data="{ menu:false }" :class="menu && 'overflow-hidden'">
         <div class="absolute inset-0 top-0 w-full h-screen bg-gradient-to-br from-primary-100 via-white to-white dark:from-primary-950/50 dark:via-secondary-950 dark:to-secondary-950"></div>
         <x-layouts.header />
             <div class="relative flex flex-col xl:gap-64 lg:gap-52 sm:gap-40 gap-28 lg:pt-56 sm:pt-40 pt-36 xl:pb-32">
@@ -33,8 +30,9 @@
             var projectsSwiper = new Swiper(".projectsSwiper", {
                 slidesPerView: 1,
                 spaceBetween: 30,
+                freeMode: true,
                 breakpoints: {
-                    
+
                     640: {
                     slidesPerView: 1.1,
                     spaceBetween: 20,
@@ -57,6 +55,7 @@
             var swiper = new Swiper(".mySwiperReviewe", {
                 effect: "fade",
                 spaceBetween: 30,
+                freeMode: true,
                 loop: true,
                 navigation: {
                     nextEl: ".swiper-review-next",

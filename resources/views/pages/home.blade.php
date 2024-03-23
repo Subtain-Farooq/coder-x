@@ -1,10 +1,10 @@
 <x-app-layout>
     <section class="relative max-w-6xl mx-auto snap-always snap-start box">
-        <div class="flex lg:flex-row flex-col items-center justify-center w-full gap-28">
+        <div class="flex flex-col items-center justify-center w-full lg:flex-row gap-28">
             <div class="flex flex-col w-full gap-10 mt-12">
                 <h1 class="relative flex flex-col gap-6">
-                    <x-icons.subtitle-lines class="md:inline-block hidden" />
-                    <span class="block sm:text-2xl text-lg font-bold leading-tight text-secondary-700 dark:text-secondary-400">
+                    <x-icons.subtitle-lines class="hidden md:inline-block" />
+                    <span class="block text-lg font-bold leading-tight sm:text-2xl text-secondary-700 dark:text-secondary-400">
                         "Hey, I’m Subtain Farooq
                     </span>
                     <span
@@ -13,21 +13,21 @@
                     </span>
                 </h1>
                 <div>
-                    <a href="" class="btn-primary">
+                    <a href="{{ route('contact') }}" class="btn-primary">
                         Get in Touch
                     </a>
                 </div>
             </div>
-            <img class="z-10 xl:w-full xl:max-w-xs w-72 shrink-0 lg:block hidden" alt="hero image"
-                src="{{ asset('assets/illustration/img-3.png') }}" />
+            <img loading="lazy"  class="z-10 hidden xl:w-full xl:max-w-xs w-72 shrink-0 lg:block" alt="hero image"
+                src="https://res.cloudinary.com/mondaypage/image/upload/e_improve/q_auto/f_auto/v1710535064/coder-x/img-3_a2jthk.png" />
         </div>
     </section>
 
     <section class="max-w-6xl mx-auto snap-always snap-start box">
-        <div class="flex flex-col items-center justify-center w-full sm:gap-20 gap-12">
+        <div class="flex flex-col items-center justify-center w-full gap-12 sm:gap-20">
             <div
-                class="relative z-10 flex flex-col sm:items-center sm:justify-center sm:gap-8 gap-5 sm:text-center text-left">
-                <h2 class="sm:text-5xl text-4xl font-bold text-secondary-950 dark:text-white">
+                class="relative z-10 flex flex-col gap-5 text-left sm:items-center sm:justify-center sm:gap-8 sm:text-center">
+                <h2 class="text-4xl font-bold sm:text-5xl text-secondary-950 dark:text-white">
                     My Services
                 </h2>
                 <p class="max-w-2xl mx-auto text-lg font-medium leading-7 text-secondary-500 dark:text-secondary-400">
@@ -39,10 +39,10 @@
                 <div
                     class="absolute bg-primary-50 dark:bg-primary-950 blur-3xl rounded-[32px] sm:w-[768px] w-72 mx-auto sm:h-96 h-[950px]">
                 </div>
-                <div class="relative grid w-full lg:grid-cols-2 grid-cols-1 sm:gap-8 gap-5">
+                <div class="relative grid w-full grid-cols-1 gap-5 lg:grid-cols-2 sm:gap-8">
                     <div
                         class="w-full rounded-[45px] border-2 border-primary-50 dark:border-primary-300/20 bg-white/50 dark:bg-black/20 backdrop-blur dark:backdrop-blur-lg">
-                        <div class="flex sm:flex-row flex-col gap-5 px-8 py-9">
+                        <div class="flex flex-col gap-5 px-8 sm:flex-row py-9">
                             <div
                                 class="flex items-center justify-center w-16 h-16 shrink-0 bg-sky-50 dark:bg-sky-600 rounded-[20px]">
                                 <x-phosphor-pen-nib-fill
@@ -63,7 +63,7 @@
 
                     <div
                         class="w-full rounded-[45px] border-2 border-primary-50 dark:border-primary-300/20 bg-white/50 dark:bg-black/20 backdrop-blur dark:backdrop-blur-lg">
-                        <div class="flex sm:flex-row flex-col gap-5 px-8 py-9">
+                        <div class="flex flex-col gap-5 px-8 sm:flex-row py-9">
                             <div
                                 class="flex items-center justify-center w-16 h-16 shrink-0 bg-rose-50 dark:bg-rose-600 rounded-[20px]">
                                 <x-phosphor-browser-fill
@@ -84,7 +84,7 @@
 
                     <div
                         class="w-full rounded-[45px] border-2 border-primary-50 dark:border-primary-300/20 bg-white/50 dark:bg-black/20 backdrop-blur dark:backdrop-blur-lg">
-                        <div class="flex sm:flex-row flex-col gap-5 px-8 py-9">
+                        <div class="flex flex-col gap-5 px-8 sm:flex-row py-9">
 
                             <div
                                 class="flex items-center justify-center w-16 h-16 shrink-0 bg-emerald-50 dark:bg-emerald-600 rounded-[20px]">
@@ -106,7 +106,7 @@
 
                     <div
                         class="w-full rounded-[45px] border-2 border-primary-50 dark:border-primary-300/20 bg-white/50 dark:bg-black/20 backdrop-blur dark:backdrop-blur-lg">
-                        <div class="flex sm:flex-row flex-col gap-5 px-8 py-9">
+                        <div class="flex flex-col gap-5 px-8 sm:flex-row py-9">
                             <div
                                 class="flex items-center justify-center w-16 h-16 shrink-0 bg-cyan-50 dark:bg-cyan-600 rounded-[20px]">
                                 <x-phosphor-layout-fill
@@ -126,16 +126,16 @@
                     </div>
                 </div>
             </div>
-            <a href="" class="btn-primary">
+            <a href="{{ route('contact') }}" class="btn-primary">
                 Get in Touch
             </a>
         </div>
     </section>
 
-    <section class="max-w-6xl w-full mx-auto snap-always snap-start box">
-        <div class="flex flex-col items-center justify-center sm:gap-16 gap-10">
-            <div class="relative flex flex-col items-center justify-center sm:gap-8 gap-5">
-                <h2 class="sm:text-5xl text-4xl font-bold text-center text-secondary-950 dark:text-white">
+    <section class="w-full max-w-6xl mx-auto snap-always snap-start box">
+        <div class="flex flex-col items-center justify-center gap-10 sm:gap-16">
+            <div class="relative flex flex-col items-center justify-center gap-5 sm:gap-8">
+                <h2 class="text-4xl font-bold text-center sm:text-5xl text-secondary-950 dark:text-white">
                     What my clients say about my work
                 </h2>
                 <p
@@ -146,9 +146,9 @@
                     <br/>
                 </p>
             </div>
-            <div class="relative xl:max-w-4xl md:max-w-2xl w-full mx-auto swiper mySwiperReviewe">
+            <div class="relative w-full mx-auto xl:max-w-4xl md:max-w-2xl swiper mySwiperReviewe">
                 <div class="flex w-full overflow-hidden swiper-wrapper">
-                
+
                     @foreach ($reviews as $review)
                         <div class="relative w-full swiper-slide shrink-0">
                             <div
@@ -156,29 +156,29 @@
                             </div>
                             <div class="p-1">
                                 <div
-                                    class="flex flex-col items-center justify-center w-full gap-8 md:px-20 sm:px-12 px-6 h-96 bg-white/90 dark:bg-black/75 backdrop-blur-2xl rounded-3xl">
-                                    <blockquote class="sm:text-2xl text-xl leading-normal text-center text-secondary-500 dark:text-secondary-400">
+                                    class="flex flex-col items-center justify-center w-full gap-8 px-6 md:px-20 sm:px-12 h-96 bg-white/90 dark:bg-black/75 backdrop-blur-2xl rounded-3xl">
+                                    <blockquote class="text-xl leading-normal text-center sm:text-2xl text-secondary-500 dark:text-secondary-400">
                                         {{ $review->message }}
                                     </blockquote>
                                     <div class="flex items-center gap-4">
-                                        <p class="text-2xl font-bold text-center text-secondary-950 dark:text-white capitalize">{{ $review->name }}</p>
-                                        <div class="h-7 w-px dark:bg-secondary-800 bg-secondary-200"></div>
+                                        <p class="text-2xl font-bold text-center capitalize text-secondary-950 dark:text-white">{{ $review->name }}</p>
+                                        <div class="w-px h-7 dark:bg-secondary-800 bg-secondary-200"></div>
                                         <img class="h-5 shrink-0" src="{{ asset($review->flag) }}" alt="{{ $review->country_name }}" />
                                     </div>
                                 </div>
                             </div>
                         </div>
                     @endforeach
-                    
+
                 </div>
                 <div
-                    class="lg:absolute z-20 flex flex-row-reverse items-center lg:justify-between justify-center w-full gap-5 lg:mt-4 sm:mt-12 mt-9 lg:top-1/3">
+                    class="z-20 flex flex-row-reverse items-center justify-center w-full gap-5 lg:absolute lg:justify-between lg:mt-4 sm:mt-12 mt-9 lg:top-1/3">
                     <button type="button" aria-label="Swiper slider next"
-                        class="flex items-center justify-center sm:w-20 sm:h-20 w-16 h-16 lg:-mr-32 transition-colors duration-300 ease-in-out rounded-full cursor-pointer swiper-review-next bg-secondary-100 dark:bg-secondary-900 text-secondary-600 hover:text-white dark:hover:text-secondary-100 hover:bg-secondary-950 dark:hover:bg-primary-500">
+                        class="flex items-center justify-center w-16 h-16 transition-colors duration-300 ease-in-out rounded-full cursor-pointer sm:w-20 sm:h-20 lg:-mr-32 swiper-review-next bg-secondary-100 dark:bg-secondary-900 text-secondary-600 hover:text-white dark:hover:text-secondary-100 hover:bg-secondary-950 dark:hover:bg-primary-500">
                         <x-phosphor-caret-right class="w-8 h-8 -mr-0.5 " />
-                    </button> 
+                    </button>
                     <button type="button" aria-label="Swiper slider previous"
-                        class="flex items-center justify-center sm:w-20 sm:h-20 w-16 h-16 lg:-ml-32 transition-colors duration-300 ease-in-out rounded-full cursor-pointer swiper-review-prev bg-secondary-100 dark:bg-secondary-900 text-secondary-600 hover:text-white dark:hover:text-secondary-100 hover:bg-secondary-950 dark:hover:bg-primary-500">
+                        class="flex items-center justify-center w-16 h-16 transition-colors duration-300 ease-in-out rounded-full cursor-pointer sm:w-20 sm:h-20 lg:-ml-32 swiper-review-prev bg-secondary-100 dark:bg-secondary-900 text-secondary-600 hover:text-white dark:hover:text-secondary-100 hover:bg-secondary-950 dark:hover:bg-primary-500">
                         <x-phosphor-caret-left class="w-8 h-8 -ml-0.5" />
                     </button>
                 </div>
@@ -187,14 +187,14 @@
     </section>
 
     <section class="max-w-6xl mx-auto snap-always snap-start box">
-        <div class="flex lg:flex-row-reverse flex-col items-center justify-between w-full lg:gap-0 gap-6">
-            <div class="w-full xl:max-w-xl max-w-md lg:-mr-16 shrink-0">
-                <img class="w-full" alt="illustration" src="{{ asset('assets/illustration/about-me-2.png') }}" />
+        <div class="flex flex-col items-center justify-between w-full gap-6 lg:flex-row-reverse lg:gap-0">
+            <div class="w-full max-w-md xl:max-w-xl lg:-mr-16 shrink-0">
+                <img class="w-full" alt="illustration" src="https://res.cloudinary.com/mondaypage/image/upload/q_auto/f_auto/e_improve/v1710535063/coder-x/about-me-2_p5o1vu.png" />
             </div>
             <div class="w-full">
                 <div class="flex flex-col gap-10">
                     <div class="flex flex-col gap-6">
-                        <h2 class="sm:text-5xl text-4xl font-bold text-secondary-950 dark:text-white">
+                        <h2 class="text-4xl font-bold sm:text-5xl text-secondary-950 dark:text-white">
                             About Me
                         </h2>
                         <p class="text-lg font-medium leading-8 text-secondary-500 dark:text-secondary-400">
@@ -207,7 +207,7 @@
                         </p>
                     </div>
                     <div>
-                        <a href="" class="btn-primary">
+                        <a href="{{ route('contact') }}" class="btn-primary">
                             Get in Touch
                         </a>
                     </div>
@@ -220,7 +220,7 @@
         <div class="flex flex-col w-full gap-24">
             <div class="flex flex-col items-center gap-8">
                 <h2
-                    class="text-secondary-950 dark:text-white sm:text-5xl sm:leading-tight leading-tight text-4xl text-center font-bold">
+                    class="text-4xl font-bold leading-tight text-center text-secondary-950 dark:text-white sm:text-5xl sm:leading-tight">
                     My Skills & Software
                 </h2>
                 <p
@@ -229,13 +229,13 @@
                     projects
                 </p>
             </div>
-            <div class="md:grid lg:grid-cols-2 lg:gap-0 gap-14 grid-cols-1 mx-auto w-full flex flex-col items-center">
-                <div class="flex flex-col items-center gap-8 md:py-5 w-full shrink-0 ">
+            <div class="flex flex-col items-center w-full grid-cols-1 mx-auto md:grid lg:grid-cols-2 lg:gap-0 gap-14">
+                <div class="flex flex-col items-center w-full gap-8 md:py-5 shrink-0 ">
                     <div
                         class="rounded-[28px] dark:bg-sky-500 bg-sky-100 dark:text-sky-100 text-sky-400 w-20 h-20 flex items-center justify-center">
                         <x-phosphor-paint-bucket-fill class="w-10 h-10 fill-current " />
                     </div>
-                    <h2 class="text-2xl font-bold text-secondary-950 dark:text-white text-center">
+                    <h2 class="text-2xl font-bold text-center text-secondary-950 dark:text-white">
                         Frontend Development
                     </h2>
                     <ul class="space-y-4 text-lg font-semibold text-center text-secondary-500 dark:text-secondary-400">
@@ -261,12 +261,12 @@
                 </div>
 
                 <div
-                    class="flex flex-col items-center gap-8 lg:border-l dark:border-secondary-800 border-secondary-200 py-5 w-full">
+                    class="flex flex-col items-center w-full gap-8 py-5 lg:border-l dark:border-secondary-800 border-secondary-200">
                     <div
                         class="rounded-[28px] dark:bg-violet-500 bg-violet-100 dark:text-violet-100 text-violet-500 w-20 h-20 flex items-center justify-center">
                         <x-phosphor-codesandbox-logo-fill class="w-10 h-10 fill-current" />
                     </div>
-                    <h2 class="text-2xl font-bold text-secondary-950 dark:text-white text-center">
+                    <h2 class="text-2xl font-bold text-center text-secondary-950 dark:text-white">
                          Tools & Technologies
                     </h2>
                     <ul class="space-y-4 text-lg font-semibold text-center text-secondary-500 dark:text-secondary-400">
@@ -295,14 +295,14 @@
     </section>
 
     <div class="overflow-hidden">
-        <section class="max-w-6xl mx-auto w-full box">
+        <section class="w-full max-w-6xl mx-auto box">
             <div class="w-full">
-                <div class="relative sm:space-y-20 space-y-14 swiper projectsSwiper w-full">
+                <div class="relative w-full sm:space-y-20 space-y-14 swiper projectsSwiper">
                     <div class="flex items-center justify-between w-full gap-5">
-                        <h2 class="text-secondary-950 lg:text-left text-center dark:text-white sm:text-5xl sm:leading-tight leading-tight text-4xl font-bold max-w-md w-full lg:ml-0 mx-auto">
+                        <h2 class="w-full max-w-md mx-auto text-4xl font-bold leading-tight text-center text-secondary-950 lg:text-left dark:text-white sm:text-5xl sm:leading-tight lg:ml-0">
                             Take a look at my portfolio
                         </h2>
-                        <div class="lg:flex hidden flex-row-reverse gap-5">
+                        <div class="flex-row-reverse hidden gap-5 lg:flex">
                             <button type="button" aria-label="Swiper slider next"
                                 class="flex items-center justify-center w-20 h-20 transition-colors duration-300 ease-in-out rounded-full cursor-pointer projectsSwiper-next bg-secondary-100 dark:bg-secondary-900 text-secondary-600 hover:text-white dark:hover:text-secondary-100 hover:bg-secondary-950 dark:hover:bg-primary-500">
                                 <x-phosphor-caret-right
@@ -321,8 +321,8 @@
                             <div class="relative w-1/2 swiper-slide group shrink-0">
                                 <div class="flex flex-col gap-10">
                                     <div class="sm:h-[350px] h-64 relative overflow-hidden rounded-3xl">
-                                        <img class="relative object-cover object-top w-full h-[350px] border-4 border-primary-200/40 dark:border-primary-300/20 rounded-3xl "
-                                            src="{{ asset($project->featured_image) }}" alt=" {{ $project->featured_image_alt }}" />
+                                        <img class="relative object-cover object-top w-full sm:h-[350px] h-64 border-4 border-primary-200/40 dark:border-primary-300/20 rounded-3xl "
+                                            src="{{$project->featured_image}}" loading="lazy" alt=" {{ $project->featured_image_alt }}" />
                                     </div>
                                     <div class="flex flex-col gap-4">
                                         <h3
@@ -346,14 +346,14 @@
                         @endforeach
                     </div>
 
-                    <div class="lg:hidden flex flex-row-reverse items-center justify-center lg:gap-5 gap-8 mx-auto w-full">
+                    <div class="flex flex-row-reverse items-center justify-center w-full gap-8 mx-auto lg:hidden lg:gap-5">
                         <button type="button"
-                            class="flex items-center justify-center lg:w-20 lg:h-20 w-16 h-16 transition-colors duration-300 ease-in-out rounded-full cursor-pointer projectsSwiper-next bg-secondary-100 dark:bg-secondary-900 text-secondary-600 hover:text-white dark:hover:text-secondary-100 hover:bg-secondary-950 dark:hover:bg-primary-500">
+                            class="flex items-center justify-center w-16 h-16 transition-colors duration-300 ease-in-out rounded-full cursor-pointer lg:w-20 lg:h-20 projectsSwiper-next bg-secondary-100 dark:bg-secondary-900 text-secondary-600 hover:text-white dark:hover:text-secondary-100 hover:bg-secondary-950 dark:hover:bg-primary-500">
                             <x-phosphor-caret-right
                                 class="w-8 h-8 -mr-0.5 transition-colors duration-300 ease-in-out" />
                         </button>
                         <button type="button"
-                            class="flex items-center justify-center lg:w-20 lg:h-20 w-16 h-16 transition-colors duration-300 ease-in-out rounded-full cursor-pointer projectsSwiper-prev bg-secondary-100 dark:bg-secondary-900 text-secondary-600 hover:text-white dark:hover:text-secondary-100 hover:bg-secondary-950 dark:hover:bg-primary-500">
+                            class="flex items-center justify-center w-16 h-16 transition-colors duration-300 ease-in-out rounded-full cursor-pointer lg:w-20 lg:h-20 projectsSwiper-prev bg-secondary-100 dark:bg-secondary-900 text-secondary-600 hover:text-white dark:hover:text-secondary-100 hover:bg-secondary-950 dark:hover:bg-primary-500">
                             <x-phosphor-caret-left
                                 class="w-8 h-8 -ml-0.5 transition-colors duration-300 ease-in-out" />
                         </button>

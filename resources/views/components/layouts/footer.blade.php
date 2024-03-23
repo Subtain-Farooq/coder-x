@@ -3,17 +3,17 @@
 
     {{-- <footer class="mt-20 border-t border-secondary-200 dark:border-secondary-900 dark:bg-black/30 snap-end snap-always"> --}}
 
-    <div class="w-full sm:py-24 py-16 mx-auto max-w-7xl box">
-        <div class="flex lg:flex-row flex-col items-start lg:gap-24 sm:gap-20 gap-12">
+    <div class="w-full py-16 mx-auto sm:py-24 max-w-7xl box">
+        <div class="flex flex-col items-start gap-12 lg:flex-row lg:gap-24 sm:gap-20">
             <div class="flex flex-col max-w-sm shrink-0 gap-7">
                 {{-- <a href="/" class="inline-flex items-center gap-0 dark:text-secondary-100 text-secondary-800">
-                    <x-phosphor-caret-left-bold class="w-10 dark:text-primary-900 text-primary-800 h-10 shrink-0 fill-current" />
+                    <x-phosphor-caret-left-bold class="w-10 h-10 fill-current dark:text-primary-900 text-primary-800 shrink-0" />
                     <span class="text-3xl font-medium">Coder-X</span>
                     <x-phosphor-minus-bold class="w-9 -mr-5 rotate-[-72deg] dark:text-primary-900 text-primary-800 shrink-0 fill-current" />
-                    <x-phosphor-caret-right-bold class="w-10 dark:text-primary-900 text-primary-800 h-10 shrink-0 fill-current" />
+                    <x-phosphor-caret-right-bold class="w-10 h-10 fill-current dark:text-primary-900 text-primary-800 shrink-0" />
                 </a> --}}
                 <a href="/" class="inline-flex items-center gap-0 dark:text-secondary-100 text-secondary-800">
-                    <img src="{{ asset('logo-4.svg') }}" alt="Coder-X Logo" class="h-12 dark:block hidden" />
+                    <img src="{{ asset('logo-4.svg') }}" alt="Coder-X Logo" class="hidden h-12 dark:block" />
                     <img src="{{ asset('logo-light-3.svg') }}" alt="Coder-X Logo" class="h-12 dark:hidden" />
                 </a>
                 <p class="max-w-lg mx-auto text-lg font-medium leading-8 text-secondary-500 dark:text-secondary-400 dark:font-normal">
@@ -22,7 +22,7 @@
                 </p>
                 <div class="flex items-center gap-5 mt-2">
                     <a href="https://join.skype.com/invite/YxIgIov1ApEP" aria-label="Twitter">
-                        <svg class="transition-colors duration-300 ease-in-out fill-current w-8 h-8 text-secondary-700 dark:text-secondary-400 hover:text-primary-500 dark:hover:text-primary-500" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Skype for Business</title><path d="M14.04 10.92l-2.52-.56c-.96-.24-2.04-.52-2.04-1.44 0-.92.76-1.56 2.16-1.56 2.84 0 2.6 1.96 4 1.96.72 0 1.36-.4 1.36-1.16 0-1.76-2.8-3.08-5.2-3.08-2.56 0-5.28 1.08-5.28 4 0 1.4.48 2.92 3.24 3.64l3.44.88c1.04.24 1.36.84 1.36 1.36 0 .88-.92 1.84-2.48 1.84-3.08 0-2.64-2.44-4.28-2.44-.72 0-1.32.52-1.32 1.24 0 1.44 1.76 3.4 5.6 3.4 3.68 0 5.52-1.84 5.52-4.24-.04-1.6-.76-3.2-3.56-3.84zm9.08 3.04c.12-.64.16-1.28.16-1.96C23.28 5.76 18.24.72 12 .72c-.68 0-1.32.04-1.96.16C9.04.32 7.92 0 6.72 0 3 0 0 3 0 6.72c0 1.2.32 2.36.88 3.32-.12.64-.16 1.28-.16 1.96 0 6.24 5.04 11.28 11.28 11.28.68 0 1.32-.04 1.96-.16 1 .56 2.12.88 3.32.88C21 24 24 21 24 17.28c0-1.2-.32-2.36-.88-3.32zm-5.84 8.32c-.88 0-1.72-.24-2.48-.64l-.52-.32-.6.12c-.52.08-1.08.16-1.68.16a9.56 9.56 0 01-9.56-9.56c0-.56.04-1.12.16-1.68l.12-.6-.32-.52c-.44-.76-.64-1.6-.64-2.48 0-2.76 2.24-5 5-5 .88 0 1.72.24 2.48.64l.52.32.6-.12c.56-.08 1.12-.16 1.68-.16A9.56 9.56 0 0121.6 12c0 .56-.04 1.12-.16 1.68l-.12.6.32.52c.44.76.64 1.6.64 2.48 0 2.76-2.24 5-5 5Z"/></svg>
+                        <svg class="w-8 h-8 transition-colors duration-300 ease-in-out fill-current text-secondary-700 dark:text-secondary-400 hover:text-primary-500 dark:hover:text-primary-500" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Skype for Business</title><path d="M14.04 10.92l-2.52-.56c-.96-.24-2.04-.52-2.04-1.44 0-.92.76-1.56 2.16-1.56 2.84 0 2.6 1.96 4 1.96.72 0 1.36-.4 1.36-1.16 0-1.76-2.8-3.08-5.2-3.08-2.56 0-5.28 1.08-5.28 4 0 1.4.48 2.92 3.24 3.64l3.44.88c1.04.24 1.36.84 1.36 1.36 0 .88-.92 1.84-2.48 1.84-3.08 0-2.64-2.44-4.28-2.44-.72 0-1.32.52-1.32 1.24 0 1.44 1.76 3.4 5.6 3.4 3.68 0 5.52-1.84 5.52-4.24-.04-1.6-.76-3.2-3.56-3.84zm9.08 3.04c.12-.64.16-1.28.16-1.96C23.28 5.76 18.24.72 12 .72c-.68 0-1.32.04-1.96.16C9.04.32 7.92 0 6.72 0 3 0 0 3 0 6.72c0 1.2.32 2.36.88 3.32-.12.64-.16 1.28-.16 1.96 0 6.24 5.04 11.28 11.28 11.28.68 0 1.32-.04 1.96-.16 1 .56 2.12.88 3.32.88C21 24 24 21 24 17.28c0-1.2-.32-2.36-.88-3.32zm-5.84 8.32c-.88 0-1.72-.24-2.48-.64l-.52-.32-.6.12c-.52.08-1.08.16-1.68.16a9.56 9.56 0 01-9.56-9.56c0-.56.04-1.12.16-1.68l.12-.6-.32-.52c-.44-.76-.64-1.6-.64-2.48 0-2.76 2.24-5 5-5 .88 0 1.72.24 2.48.64l.52.32.6-.12c.56-.08 1.12-.16 1.68-.16A9.56 9.56 0 0121.6 12c0 .56-.04 1.12-.16 1.68l-.12.6.32.52c.44.76.64 1.6.64 2.48 0 2.76-2.24 5-5 5Z"/></svg>
                     </a>
                     <a href="https://discordapp.com/users/630670922197499925" aria-label="Twitter">
                         <x-phosphor-discord-logo class="transition-colors duration-300 ease-in-out fill-current w-9 h-9 text-secondary-700 dark:text-secondary-400 hover:text-primary-500 dark:hover:text-primary-500" />
@@ -42,22 +42,19 @@
                 </div>
             </div>
             <div class="w-full">
-                <div class="grid xl:grid-cols-4 lg:grid-cols-2 sm:grid-cols-4 grid-cols-1 xl:gap-24 sm:gap-10 gap-12">
+                <div class="grid grid-cols-1 gap-12 xl:grid-cols-4 lg:grid-cols-2 sm:grid-cols-4 xl:gap-24 sm:gap-10">
 
                     <div class="flex flex-col w-full gap-7">
                         <p class="text-xl font-semibold text-secondary-950 dark:text-white">Pages</p>
 
                         <div class="flex flex-col gap-5">
-                            <a href="" class="flex items-center gap-2 text-lg font-semibold transition-colors duration-300 ease-in-out text-secondary-500 dark:text-secondary-400 hover:text-secondary-950 dark:hover:text-secondary-100">
+                            <a href="{{ route('home') }}" class="flex items-center gap-2 text-lg font-semibold transition-colors duration-300 ease-in-out text-secondary-500 dark:text-secondary-400 hover:text-secondary-950 dark:hover:text-secondary-100">
                                 Home
                             </a>
-                            <a href="" class="flex items-center gap-2 text-lg font-semibold transition-colors duration-300 ease-in-out text-secondary-500 dark:text-secondary-400 hover:text-secondary-950 dark:hover:text-secondary-100">
-                                About
+                            <a href="{{ route('projects') }}" class="flex items-center gap-2 text-lg font-semibold transition-colors duration-300 ease-in-out text-secondary-500 dark:text-secondary-400 hover:text-secondary-950 dark:hover:text-secondary-100">
+                                Projects
                             </a>
-                            <a href="" class="flex items-center gap-2 text-lg font-semibold transition-colors duration-300 ease-in-out text-secondary-500 dark:text-secondary-400 hover:text-secondary-950 dark:hover:text-secondary-100">
-                                Portfolio
-                            </a>
-                            <a href="" class="flex items-center gap-2 text-lg font-semibold transition-colors duration-300 ease-in-out text-secondary-500 dark:text-secondary-400 hover:text-secondary-950 dark:hover:text-secondary-100">
+                            <a href="{{ route('contact') }}" class="flex items-center gap-2 text-lg font-semibold transition-colors duration-300 ease-in-out text-secondary-500 dark:text-secondary-400 hover:text-secondary-950 dark:hover:text-secondary-100">
                                 Contact
                             </a>
 
@@ -79,11 +76,11 @@
                     <div class="flex flex-col w-full sm:col-span-2 gap-7 ">
                         <p class="text-xl font-semibold text-secondary-950 dark:text-white">Contact Me</p>
                         <div class="flex flex-col w-full gap-5 ">
-                            <a href="" class="flex items-center gap-2 text-lg font-semibold transition-colors duration-300 ease-in-out text-secondary-500 dark:text-secondary-400 hover:text-secondary-950 dark:hover:text-secondary-100">
+                            <a href="mailto:subtain@coder-x.com" class="flex items-center gap-2 text-lg font-semibold transition-colors duration-300 ease-in-out text-secondary-500 dark:text-secondary-400 hover:text-secondary-950 dark:hover:text-secondary-100">
                                 <svg class="fill-current w-7 h-7" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="fill-current" viewBox="0 0 256 256"><path d="M128,24a104,104,0,0,0,0,208c21.51,0,44.1-6.48,60.43-17.33a8,8,0,0,0-8.86-13.33C166,210.38,146.21,216,128,216a88,88,0,1,1,88-88c0,26.45-10.88,32-20,32s-20-5.55-20-32V88a8,8,0,0,0-16,0v4.26a48,48,0,1,0,5.93,65.1c6,12,16.35,18.64,30.07,18.64,22.54,0,36-17.94,36-48A104.11,104.11,0,0,0,128,24Zm0,136a32,32,0,1,1,32-32A32,32,0,0,1,128,160Z"></path></svg>
-                                hello@codeer-x.com
+                                subtain@coder-x.com
                             </a>
-                            <a href="" class="flex items-center gap-2 text-lg font-semibold transition-colors duration-300 ease-in-out text-secondary-500 dark:text-secondary-400 hover:text-secondary-950 dark:hover:text-secondary-100">
+                            <a href="tel:+92 300 799 8354" class="flex items-center gap-2 text-lg font-semibold transition-colors duration-300 ease-in-out text-secondary-500 dark:text-secondary-400 hover:text-secondary-950 dark:hover:text-secondary-100">
                                 <svg class="fill-current w-7 h-7" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="fill-current" viewBox="0 0 256 256"><path d="M154.2,38.45a6,6,0,0,1,7.35-4.25A84.24,84.24,0,0,1,221.8,94.45a6,6,0,0,1-4.25,7.35,5.94,5.94,0,0,1-1.55.2,6,6,0,0,1-5.8-4.45A72.34,72.34,0,0,0,158.45,45.8,6,6,0,0,1,154.2,38.45ZM150.45,77.8C165,81.68,174.32,91,178.2,105.55A6,6,0,0,0,184,110a5.94,5.94,0,0,0,1.55-.2,6,6,0,0,0,4.25-7.35c-5-18.71-17.54-31.25-36.25-36.25a6,6,0,1,0-3.1,11.6Zm79.44,97A54.25,54.25,0,0,1,176,222C97.7,222,34,158.3,34,80A54.25,54.25,0,0,1,81.17,26.11,14,14,0,0,1,95.73,34.5l21.1,47.1a14,14,0,0,1-1.12,13.28,6,6,0,0,1-.42.57L94.22,120.51a1.89,1.89,0,0,0,0,1.67c7.66,15.68,24.1,32,40,39.65a1.88,1.88,0,0,0,1.68-.06l24.69-21a4.81,4.81,0,0,1,.56-.42,14,14,0,0,1,13.28-1.22l47.24,21.17A14,14,0,0,1,229.89,174.83ZM218,173.32a2,2,0,0,0-1.21-2l-47.25-21.17a1.92,1.92,0,0,0-1.6.1l-24.68,21c-.18.15-.37.29-.56.42a14,14,0,0,1-13.77,1c-18.36-8.87-36.66-27-45.53-45.19a14,14,0,0,1,.91-13.73,4.73,4.73,0,0,1,.43-.57l21.06-25.06a2,2,0,0,0,0-1.67L84.74,39.31A2,2,0,0,0,82.9,38h-.23A42.24,42.24,0,0,0,46,80c0,71.68,58.32,130,130,130A42.24,42.24,0,0,0,218,173.32Z"></path></svg>
                                 +92 300 799 8354
                             </a>
@@ -93,7 +90,7 @@
             </div>
         </div>
     </div>
-    <div class="py-6 border-t border-secondary-200 dark:border-secondary-900 dark:bg-black/20 sm:text-base text-sm">
+    <div class="py-6 text-sm border-t border-secondary-200 dark:border-secondary-900 dark:bg-black/20 sm:text-base">
         <p class="flex items-center justify-center gap-2 text-center text-secondary-700 dark:text-secondary-400 font-seemibold">
             Copyright © Coder X | Designed and Developed by <x-phosphor-heart-fill class="w-5 h-5 -mb-1 animate-pulse text-rose-700" />
         </p>
